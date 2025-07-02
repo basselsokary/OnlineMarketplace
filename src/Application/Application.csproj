@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+    <PackageReference Include="Scrutor" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Carts\Queries\" />
+    <Folder Include="Features\Payments\" />
+    <Folder Include="Features\Payments\Commands\" />
+    <Folder Include="Features\Payments\Queries\" />
+  </ItemGroup>
+
+</Project>
